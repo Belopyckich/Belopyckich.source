@@ -1,0 +1,11 @@
+.about {
+    min-height: 680px;
+    padding-top: 71px;
+    padding-bottom: 35px;
+    position: relative;
+    background-color: $bg-color;
+
+    &__descr {
+        text-align: center;
+    }
+}

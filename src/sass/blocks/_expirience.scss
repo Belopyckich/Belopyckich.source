@@ -1,0 +1,92 @@
+.expirience {
+    min-height: 770px;
+    background-color: $bg-color;
+    padding: 35px 0;
+    &__wrapper {
+        padding: 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 120px;
+    }
+
+    &__column {
+        &__title {
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: 600;
+            font-style: normal;
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -27px;
+                    left: 0;
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 68px;
+            background-color: #ffffff;
+        }
+        &__head {
+            color: #ffffff;
+            position: relative;
+            padding: 45px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+
+        &__name {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            color: #ffffff;
+        }
+        &__circle {
+            position: absolute;
+            border-radius: 100%;
+            top: 50px;
+            left: 45px;
+            width: 36px;
+            height: 36px;
+            background: $main-color;
+        }
+        &__location {
+            color: #ffffff;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+}

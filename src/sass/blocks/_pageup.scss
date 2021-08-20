@@ -1,0 +1,16 @@
+.pageup {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    transition: all 1s;
+    &__active {
+        transition: all 1s;
+        opacity: 1;
+    }
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 62px;
+    &__rectangle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 112px;
+        height: 96px;
+        padding: 29px 23px;
+        border: 3px solid #FFFFFF;
+        cursor: pointer;
+        span {
+            display:block;
+            width: 60px;
+            height: 5px;
+            background: white;
+        }
+    }
+    &.active {
+        transition: all 0.6s;
+        display: none;
+    }
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    &__block {
+        z-index: 10;
+        position: relative;
+        width: 360px;
+        background-color: $main-color;
+        height: 100%;
+        padding-top: 197px;
+        padding-left: 60px;
+    }
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__close {
+        position: absolute;
+        top: 40px;
+        right: 37px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+        a {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &__rectangle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 25px;
+        border-radius: 2%;
+        width: 263px;
+        height: 50px;
+        border: 3px solid #FFFFFF;
+        cursor: pointer;
+        &:hover {
+            .menu__circle{
+                transition: all 0.6s;
+                background-color: #fff;
+            }
+        }
+    }
+    &__text {
+        width: 138px;
+    }
+    &__circle {
+        width: 33px;
+        height: 29px;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
+    &__social {
+        position: absolute;
+        bottom: 25px;
+        img {
+            width: 34px;
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  black;
+        opacity: .45;
+    }
+}

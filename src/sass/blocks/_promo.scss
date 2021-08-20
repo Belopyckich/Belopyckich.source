@@ -1,0 +1,37 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main-bg.png') no-repeat 100%/cover;
+    padding: 275px 0 100px 0;
+    overflow: hidden;
+
+    &__wrapper {
+        position: fixed;
+        top: 35%;
+        opacity: 1;
+    }
+
+    &__greetings {
+        color: white;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 54px;
+    }
+
+    &__title {
+        margin-top: 24px;
+    }
+
+    &__img {
+        margin-top: 145px;
+    }
+    &__arrow {
+            cursor: pointer;
+            &__animated {
+                animation-name: doodle;
+                animation-duration: 3s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+    }
+}

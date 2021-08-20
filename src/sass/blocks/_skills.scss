@@ -1,0 +1,29 @@
+.skills {
+    min-height: 970px;
+    background-color: $bg-color;
+    padding: 35px 0;
+
+    &__item {
+        border: 1px solid white;
+        padding: 37px 30px 28px 21px;
+
+        &__title {
+            text-align: start;
+            margin-top: 20px;
+        }
+
+        &__descr {
+            margin-top: 17px;
+        }
+    }
+
+    &__grid-container {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        gap: 12px;
+    }
+
+}

@@ -1,0 +1,32 @@
+ .panel {
+     z-index: 3;
+     top: 230px;
+     left: 50px;
+     position: fixed;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     height: 360px;
+
+     &__divider {
+        width: 2px;
+        height: 76px;
+        background-color: white;
+     }
+
+     &__descr {
+         height: 161px;
+         width: 25px;
+         color: white;
+         span {
+             text-align: center;
+             width: 161px;
+             transform: rotate(-90deg) translate(-35%,-255%);
+             display: block;
+             font-style: normal;
+             font-weight: 600;
+             font-size: 18px;
+         }
+     }
+ }
