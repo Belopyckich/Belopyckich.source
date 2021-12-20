@@ -7,6 +7,10 @@
         border: 1px solid white;
         padding: 37px 30px 28px 21px;
 
+        &__img {
+            height: 65px;
+        }
+
         &__title {
             text-align: start;
             margin-top: 20px;

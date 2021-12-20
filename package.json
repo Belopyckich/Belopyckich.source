@@ -1,10 +1,16 @@
 {
-  "name": "pulse",
-  "version": "1.0.0",
-  "description": "",
+  "name": "portfolio",
+  "version": "1.0",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve --base-href /rtl/ --open --aot",
+    "build": "ng build --prod --base-href /rtl/ --aot",
+    "serve": "ng serve",
+    "prebuild": "node ./prebuild",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +23,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.1.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.0",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2",
     "webpack-stream": "^6.1.2",
@@ -26,5 +33,13 @@
   "browserslist": [
     "> 1%"
   ],
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belopyckich/Belopyckich.source.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Belopyckich/Belopyckich.source/issues"
+  },
+  "homepage": "https://github.com/Belopyckich/Belopyckich.source#readme",
+  "description": ""
 }

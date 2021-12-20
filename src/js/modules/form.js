@@ -14,7 +14,7 @@ function form() {
     const modal = createForm();
 
     const contactsForm = document.querySelector('.contacts__form'),
-          textForm = document.querySelector('.modal__text'); 
+          textForm = document.querySelector('.modal__text');
 
     let validateForms = function(selector, rules, modal) {
         new window.JustValidate(selector, {
@@ -65,6 +65,8 @@ function form() {
             minLength: 2, 
             maxLength: 8
         }, text: {
+            required:true
+        }, checkbox: {
             required:true
         }}, modal);
 }
