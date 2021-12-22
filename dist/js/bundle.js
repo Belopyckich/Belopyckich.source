@@ -768,8 +768,8 @@ function language() {
     skillsItemTitle = document.querySelectorAll('.skills__item__title'),
     skillsItemDescr = document.querySelectorAll('.skills__item__descr'),
     portfolioTitle = document.querySelector('.portfolio__title'),
-    portfolioItemTitle = document.querySelector('.portfolio__item__title'),
-    portfolioItemDescr = document.querySelector('.portfolio__item__descr'),
+    portfolioItemTitle = document.querySelectorAll('.portfolio__item__title'),
+    portfolioItemDescr = document.querySelectorAll('.portfolio__item__descr'),
     contactsTitle = document.querySelector('.contacts__title'),
     contactsDescrTitle = document.querySelector('.contacts__descr__title'),
     contactsDescrText = document.querySelectorAll('.contacts__descr__text'),
@@ -824,8 +824,10 @@ function language() {
         skillsItemDescr[8].textContent = 'Динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах.';
         skillsItemDescr[9].textContent = 'Javasript библиотека, помогающая уменьшить количество необходимого кода, параллельно увеличивающая функционал языка.';
         portfolioTitle.textContent = 'Портфолио';
-        portfolioItemTitle.textContent = '«PyCommander»';
-        portfolioItemDescr.innerHTML = 'Приложение «PyCommander», предназначено для упрощения работы пользователя в операционной системе с папками и файлами. Основным функционалом данного приложения является простой и быстрый переход по иерархической файловой системе. Также данная программа обладает следующим функционалом:<br><br>- просмотр файлов и каталогов;<br>- копирование файлов и каталогов;<br>- удаление файлов и каталогов;<br>- создание файлов и каталогов;<br>- перемещение файлов и каталогов';
+        portfolioItemTitle[0].textContent = '«PyCommander»';
+        portfolioItemDescr[0].innerHTML = 'Приложение «PyCommander», предназначено для упрощения работы пользователя в операционной системе с папками и файлами. Основным функционалом данного приложения является простой и быстрый переход по иерархической файловой системе. Также данная программа обладает следующим функционалом:<br><br>- просмотр файлов и каталогов;<br>- копирование файлов и каталогов;<br>- удаление файлов и каталогов;<br>- создание файлов и каталогов;<br>- перемещение файлов и каталогов';
+        portfolioItemTitle[1].textContent = '«Pokedex»';
+        portfolioItemDescr[1].innerHTML = 'Приложение «Pokedex», предназначено для просмотра библиотеки покемонов. Написано на библиотеке React, Redux и Axios.Основным функционалом данного приложения является:<br><br>- сортировка покемонов по свойствам, типу и т.д;<br>- добавлять покемона в избранное;<br>- просмотр  информации по отдельному покемону;';
         contactsTitle.textContent = 'Контакты';
         contactsDescrTitle.textContent = 'Свяжитесь со мной';
         contactsDescrText[0].textContent = 'Любым удобным для вас способом:';
@@ -872,7 +874,8 @@ function language() {
         skillsItemDescr[8].textContent = 'Dynamic programming language that is applied to an HTML document, and can provide dynamic interactivity on websites.';
         skillsItemDescr[9].textContent = 'Javascript Library that helps to reduce the amount of necessary code, while simultaneously increasing the functionality of the language.';
         portfolioTitle.textContent = 'Portfolio';
-        portfolioItemDescr.innerHTML = `Application «PyCommander», intended to simplify the user's work with folders and files in the operating system. The main functionality of this application is and fast transition through the hierarchical file system. Also, this program has the following functionality:<br><br>- viewing files and directories;<br>- copying files and directories;<br>- deleting files and directories;<br>- creating files and directories;<br>- moving files and directories`;
+        portfolioItemDescr[0].innerHTML = `Application «PyCommander», intended to simplify the user's work with folders and files in the operating system. The main functionality of this application is and fast transition through the hierarchical file system. Also, this program has the following functionality:<br><br>- viewing files and directories;<br>- copying files and directories;<br>- deleting files and directories;<br>- creating files and directories;<br>- moving files and directories`;
+        portfolioItemDescr[1].innerHTML = `The application "Pokedex" is designed to view the Pokemon library. Written in React, Redux and Axios libraries.The main functionality of this application is:<br><br>- sort pokemon by properties, type, etc;<br>- add pokemon to favorites;<br>- view information on an individual pokemon`;
         contactsTitle.textContent = 'Contacts';
         contactsDescrTitle.textContent = 'Contact with me';
         contactsDescrText[0].textContent = 'In any convenient way.';
